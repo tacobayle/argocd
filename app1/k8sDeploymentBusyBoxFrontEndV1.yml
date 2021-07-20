@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-front1
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: web-front1
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: web-front1
-          image: tacobayle/busybox-v2
+          image: tacobayle/busybox-v1
           command: [ "sh", "-c"]
           args:
           - while true; do
