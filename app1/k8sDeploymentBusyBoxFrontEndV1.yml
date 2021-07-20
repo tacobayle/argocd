@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: web-front1
-          image: tacobayle/busybox-v1
+          image: tacobayle/busybox-v2
           command: [ "sh", "-c"]
           args:
           - while true; do
